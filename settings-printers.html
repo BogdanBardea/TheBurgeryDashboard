@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>The Burgery - Printers</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body>
+  <div class="wrapper d-flex align-items-stretch">
+    <!--Aside navigation Start-->
+    <nav id="sidebar">
+      <img class="website-logo mb-5" src="./assets/website.png" alt="">
+      <div class="pt-4">
+        <ul class="list-unstyled components mb-5">
+          <li>
+            <a href="orders.html"><span
+              class="pl-3">Orders</span></a>
+            </li>
+            <li>
+              <a href="klanten.html"><span
+                  class="pl-3">Klanten</span></a>
+            </li>
+            <li>
+              <a href="menukaart-items.html"><span
+                  class="pl-3">Menukaart</span></a>
+            </li>
+            <li class="active">
+              <a href="settings-printers.html"><span
+                class="pl-3">Instellingen</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Aside navigation End-->
+
+    <!-- Page Content  -->
+    <!-- Page Content  -->
+    <div id="content">
+
+      <!--Top navigation Start-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+          <button type="button" id="sidebarCollapse" class="btn btn-primary d-inline-block d-lg-none">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="settings-printers.html" class="nav-link menu-categories-active">Printers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="settings-delivery.html" class="nav-link menu-categories">Leverzones</a>
+                  </li>
+                <li class="nav-item">
+                  <a href="settings-restaurant.html" class="nav-link menu-categories">Restaurants</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="settings-pushberichten.html" class="nav-link menu-categories">Pushberichten</a>
+                    </li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link restaurant-name" href="#"><img src="./assets/user.png" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link restaurant-name">uitloggen</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Aside navigation End-->
+
+      <!--Menukaart-categories Start-->
+      <section class="header-menukaart-categories container-fluid">
+        <div class="row mb-5">
+          <div class="col-5">
+            <p class="menukaart-header-title">
+
+            </p>
+          </div>
+          <div class="col-7">
+            <div class="float-right blue-box">
+              <a href="#" class="order-details-link text-general" data-toggle="modal" data-target="#add-new-item">
+                <span class="plus-image">
+                  <img src="./assets/plus.png" alt="plus-new-item-image" class="d-inline-block mr-2">
+                  <p class="new-item-text d-inline-block">
+                    Voeg printer toe
+                  </p>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="card container-fluid card-menukaart">
+              <div class="card-body">
+                <div class="row h-100">
+                  <div class="col-7 my-auto">
+                    <div class="my-auto">
+                      <span class="item-name-printers mr-5"><img src="./assets/printer 1.png" alt=""></span>
+                      <span class="item-name-printers mr-5">IP: 200.170.70.18</span>
+                      <span class="item-name-printers mr-5 ml-5">Poort:</span>
+                    </div>
+                  </div>
+                  
+                  <div class="col-5">
+                    <div class="float-right">
+                      <span class="edit-item-printers">
+                        <a href="#" class="order-details-link text-general" data-toggle="modal"
+                          data-target="#edit-new-item">
+                          <img src="./assets/edit.png" alt="edit-printers-item">
+                        </a>
+                      </span>
+                      <span class="delete-item-menukaart">
+                        <img src="./assets/trash.png" alt="delete-printers-item">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal add -->
+      <div id="add-new-item" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"> <img
+                    src="./assets/x-close.png" alt="">
+                </span></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-center new-item-title mb-5">
+                Voeg printer toe
+              </p>
+              <div class="container-fluid px-5 mx-auto w-75">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <form>
+                      <div class="form-group">
+                        <label for="notificationTitle">IP Adres</label>
+                        <input type="text" class="form-control" id="notificationTitle">
+                      </div>
+                      <div class="form-group">
+                        <label for="notificationDescription">Poort</label>
+                        <input type="text" class="form-control" id="notificationTitle">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div class="d-flex justify-content-center">
+                  <button type="close" class="btn close-item-modal mr-2" data-dismiss="modal">Annuleren</button>
+                  <button type="submit" class="btn submit-item-modal ml-2">Voeg toe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal add end-->
+
+      <!-- Modal edit start -->
+      <div id="edit-new-item" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg modal-position">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"> <img
+                    src="./assets/x-close.png" alt="">
+                </span></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-center new-item-title mb-5">
+                Wijzig Printer
+              </p>
+              <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <form>
+                      <div class="form-group">
+                        <label for="name-item">IP Adres</label>
+                        <input type="text" class="form-control" id="name-item">
+                      </div>
+                      <div class="form-group">
+                        <label for="notificationDescription">Poort</label>
+                        <input type="text" class="form-control" id="notificationTitle">
+                      </div>
+                    <div class="container mt-5">
+                      <div class="d-flex justify-content-right">
+                        <button type="close" class="btn close-item-modal mr-2" data-dismiss="modal">Annuleren</button>
+                        <button type="submit" class="btn submit-item-modal ml-2">Opslaan</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal edit end-->
+
+      <!--Menukaart-categories End-->
+
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
